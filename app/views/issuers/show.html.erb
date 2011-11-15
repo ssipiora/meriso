@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @issuer.name %>
+</p>
+
+<p>
+  <b>Notes:</b>
+  <%= @issuer.notes %>
+</p>
+
+
+<%= link_to 'Edit', edit_issuer_path(@issuer) %> |
+<%= link_to 'Back', issuers_path %>

@@ -1,0 +1,70 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>First:</b>
+  <%= @employee.first %>
+</p>
+
+<p>
+  <b>Middle initial:</b>
+  <%= @employee.middle_initial %>
+</p>
+
+<p>
+  <b>Last:</b>
+  <%= @employee.last %>
+</p>
+
+<p>
+  <b>Position:</b>
+  <%= @employee.position %>
+</p>
+
+<p>
+  <b>Address1:</b>
+  <%= @employee.address1 %>
+</p>
+
+<p>
+  <b>Address2:</b>
+  <%= @employee.address2 %>
+</p>
+
+<p>
+  <b>City:</b>
+  <%= @employee.city %>
+</p>
+
+<p>
+  <b>State:</b>
+  <%= @employee.state %>
+</p>
+
+<p>
+  <b>Zip:</b>
+  <%= @employee.zip %>
+</p>
+
+<p>
+  <b>Country:</b>
+  <%= @employee.country %>
+</p>
+
+<p>
+  <b>Phone:</b>
+  <%= @employee.phone %>
+</p>
+
+<p>
+  <b>Territory:</b>
+  <%= @employee.territory %>
+</p>
+
+<p>
+  <b>Company:</b>
+  <%= @employee.company_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_employee_path(@employee) %> |
+<%= link_to 'Back', employees_path %>

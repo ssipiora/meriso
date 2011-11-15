@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  package_ID: 1
+  ndc: MyString
+  strength_code: 1
+
+two:
+  package_ID: 1
+  ndc: MyString
+  strength_code: 1

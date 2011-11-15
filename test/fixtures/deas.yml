@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  dea_class_code: MyString
+  dea_class_desc: MyString
+
+two:
+  dea_class_code: MyString
+  dea_class_desc: MyString

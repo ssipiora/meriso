@@ -1,0 +1,51 @@
+<h1>Listing employees</h1>
+
+<table>
+  <tr>
+    <th>First</th>
+    <th>Middle initial</th>
+    <th>Last</th>
+    <th>Position</th>
+    <th>Address1</th>
+    <th>Address2</th>
+    <th>City</th>
+    <th>State</th>
+    <th>Zip</th>
+    <th>Country</th>
+    <th>Phone</th>
+    <th>Territory</th>
+    <th>Company</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @employees.each do |employee| %>
+  <tr>
+    <td><%= employee.first %></td>
+    <td><%= employee.middle_initial %></td>
+    <td><%= employee.last %></td>
+    <td><%= employee.position %></td>
+    <td><%= employee.address1 %></td>
+    <td><%= employee.address2 %></td>
+    <td><%= employee.city %></td>
+    <td><%= employee.state %></td>
+    <td><%= employee.zip %></td>
+    <td><%= employee.country %></td>
+    <td><%= employee.phone %></td>
+    <td><%= employee.territory %></td>
+    <td><%= employee.company_id %></td>
+    <td><%= link_to 'Show', employee %></td>
+    <td><%= link_to 'Edit', edit_employee_path(employee) %></td>
+    <td><%= link_to 'Destroy', employee, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Employee', new_employee_path %>
+
+<br />
+<%= will_paginate @employees %>
+<br />

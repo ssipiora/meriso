@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  j_code: MyString
+  j_code_desc: MyString
+  ndc: MyString
+  product_name: MyString
+
+two:
+  j_code: MyString
+  j_code_desc: MyString
+  ndc: MyString
+  product_name: MyString

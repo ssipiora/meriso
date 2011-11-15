@@ -1,0 +1,60 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Card number:</b>
+  <%= @card.card_number %>
+</p>
+
+<p>
+  <b>Exp date:</b>
+  <%= @card.exp_date %>
+</p>
+
+<p>
+  <b>Cvv:</b>
+  <%= @card.cvv %>
+</p>
+
+<p>
+  <b>Issuer:</b>
+  <%= @card.issuer %>
+</p>
+
+<p>
+  <b>Issuer:</b>
+  <%= @card.lot_number %>
+</p>
+
+<p>
+  <b>Lot:</b>
+  <%= @card.lot_id %>
+</p>
+
+<p>
+  <b>Location:</b>
+  <%= @card.location_id %>
+</p>
+
+<p>
+  <b>Location type:</b>
+  <%= @card.location_type %>
+</p>
+
+<p>
+  <b>Product:</b>
+  <%= @card.product_id %>
+</p>
+
+<p>
+  <b>Activated date:</b>
+  <%= @card.activated_date %>
+</p>
+
+<p>
+  <b>Issuer:</b>
+  <%= @card.issuer_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_card_path(@card) %> |
+<%= link_to 'Back', cards_path %>

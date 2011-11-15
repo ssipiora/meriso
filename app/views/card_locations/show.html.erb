@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Card:</b>
+  <%= @card_location.card_id %>
+</p>
+
+<p>
+  <b>Location:</b>
+  <%= @card_location.location_id %>
+</p>
+
+<p>
+  <b>Location type:</b>
+  <%= @card_location.location_type %>
+</p>
+
+
+<%= link_to 'Edit', edit_card_location_path(@card_location) %> |
+<%= link_to 'Back', card_locations_path %>

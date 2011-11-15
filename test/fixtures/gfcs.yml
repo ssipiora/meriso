@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  gfc: 1
+  gfc_master_code: 1
+  gcr_code: 1
+  form_code: MyString
+  strength_code: 1
+  roa_code: MyString
+  gfc_deact: MyString
+
+two:
+  gfc: 1
+  gfc_master_code: 1
+  gcr_code: 1
+  form_code: MyString
+  strength_code: 1
+  roa_code: MyString
+  gfc_deact: MyString

@@ -1,0 +1,27 @@
+<h1>Listing card_locations</h1>
+
+<table>
+  <tr>
+    <th>Card</th>
+    <th>Location</th>
+    <th>Location type</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @card_locations.each do |card_location| %>
+  <tr>
+    <td><%= card_location.card_id %></td>
+    <td><%= card_location.location_id %></td>
+    <td><%= card_location.location_type %></td>
+    <td><%= link_to 'Show', card_location %></td>
+    <td><%= link_to 'Edit', edit_card_location_path(card_location) %></td>
+    <td><%= link_to 'Destroy', card_location, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Card location', new_card_location_path %>

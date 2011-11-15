@@ -1,0 +1,61 @@
+<%= form_for(@card) do |f| %>
+  <% if @card.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@card.errors.count, "error") %> prohibited this card from being saved:</h2>
+
+      <ul>
+      <% @card.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :card_number %><br />
+    <%= f.text_field :card_number %>
+  </div>
+  <div class="field">
+    <%= f.label :exp_date %><br />
+    <%= f.date_select :exp_date %>
+  </div>
+  <div class="field">
+    <%= f.label :cvv %><br />
+    <%= f.text_field :cvv %>
+  </div>
+  <div class="field">
+    <%= f.label :lot_number %><br />
+    <%= f.text_field :lot_number %>
+  </div>
+  <div class="field">
+    <%= f.label :issuer %><br />
+    <%= f.text_field :issuer %>
+  </div>
+  <div class="field">
+    <%= f.label :lot_id %><br />
+    <%= f.number_field :lot_id %>
+  </div>
+  <div class="field">
+    <%= f.label :location_id %><br />
+    <%= f.number_field :location_id %>
+  </div>
+  <div class="field">
+    <%= f.label :location_type %><br />
+    <%= f.text_field :location_type %>
+  </div>
+  <div class="field">
+    <%= f.label :product_id %><br />
+    <%= f.number_field :product_id %>
+  </div>
+  <div class="field">
+    <%= f.label :activated_date %><br />
+    <%= f.date_select :activated_date %>
+  </div>
+  <div class="field">
+    <%= f.label :issuer_id %><br />
+    <%= f.number_field :issuer_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,32 @@
+:load_providers
+:load_employees
+:load_awps
+:load_deas
+:load_zipcodes
+:load_exdrugs
+:load_expgenrcs
+:load_expstrens
+:load_forms
+:load_gcrs
+:load_gfcs
+:load_jcodes
+:load_lbly2ks
+:load_measures
+:load_mforms
+:load_mfrs
+:load_npis
+:load_oranges
+:load_packstrens
+:load_prodcats
+:load_roas
+:load_strengths
+:load_thers
+:load_states
+:load_skus
+:load_territories
+
+
+
+
+rake upload_data:load_skus
+rake import_cards:load_cards

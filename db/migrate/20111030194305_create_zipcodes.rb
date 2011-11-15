@@ -1,0 +1,84 @@
+class CreateZipcodes < ActiveRecord::Migration
+  def change
+    create_table :zipcodes do |t|
+      t.string :zipcode
+      t.string :primary_record
+      t.integer :population
+      t.integer :households_per_zipcode
+      t.integer :white_population
+      t.integer :black_population
+      t.integer :hispanic_population
+      t.integer :asian_population
+      t.integer :hawaiian_population
+      t.integer :indian_population
+      t.integer :other_population
+      t.integer :male_population
+      t.integer :female_population
+      t.decimal :persons_per_household
+      t.integer :average_house_value
+      t.integer :income_per_household
+      t.decimal :median_age
+      t.decimal :median_age_male
+      t.decimal :median_age_female
+      t.decimal :latitude
+      t.decimal :longitude
+      t.integer :elevation
+      t.string :state
+      t.string :state_full_name
+      t.string :city_type
+      t.string :city_alias_abbreviation
+      t.string :area_code
+      t.string :city
+      t.string :city_alias_name
+      t.string :county
+      t.string :county_fips
+      t.string :state_fips
+      t.string :time_zone
+      t.string :daylight_saving
+      t.string :msa
+      t.string :pmsa
+      t.string :csa
+      t.string :cbsa
+      t.string :cbsa_div
+      t.string :cbsa_type
+      t.string :cbs_aname
+      t.string :msa_name
+      t.string :pmsa_name
+      t.string :region
+      t.string :division
+      t.string :mailing_name
+      t.integer :number_of_businesses
+      t.integer :number_of_employees
+      t.integer :business_first_quarter_payroll
+      t.integer :business_annual_payroll
+      t.string :business_employment_flag
+      t.integer :growth_rank
+      t.integer :growth_housing_units_2003
+      t.integer :growth_housing_units_2004
+      t.integer :growth_increase_number
+      t.decimal :growth_increase_percentage
+      t.integer :cbsa_pop_2003
+      t.integer :cbsa_div_pop_2003
+      t.string :congressional_district
+      t.string :congressional_land_area
+      t.integer :delivery_residential
+      t.integer :delivery_business
+      t.integer :delivery_total
+      t.string :preferred_last_line_key
+      t.string :classification_code
+      t.string :multi_county
+      t.string :csa_name
+      t.string :cbsa_div_name
+      t.string :city_state_key
+      t.integer :population_estimate
+      t.decimal :land_area
+      t.decimal :water_area
+      t.string :city_alias_code
+      t.string :city_mixed_case
+      t.string :city_alias_mixed_case
+      t.string :city_mixed_case
+
+      t.timestamps
+    end
+  end
+end

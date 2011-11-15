@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  exceptional_drug: MyString
+  exceptional_drug_desc: MyString
+
+two:
+  exceptional_drug: MyString
+  exceptional_drug_desc: MyString

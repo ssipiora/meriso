@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  product_name: MyString
+  ndc: MyString
+  manufacturer_name: MyString
+  effective_date: 2011-10-30
+  manufacturer_cmsid: MyString
+  package_cmsid: MyString
+
+two:
+  product_name: MyString
+  ndc: MyString
+  manufacturer_name: MyString
+  effective_date: 2011-10-30
+  manufacturer_cmsid: MyString
+  package_cmsid: MyString

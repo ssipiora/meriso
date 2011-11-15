@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  territory_name: MyString
+  zipcode: MyString
+  zip_label: MyString
+  district_id: 1
+
+two:
+  territory_name: MyString
+  zipcode: MyString
+  zip_label: MyString
+  district_id: 1

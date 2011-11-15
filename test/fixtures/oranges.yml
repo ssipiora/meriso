@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  orange_book_code: MyString
+  orange_book_desc: MyString
+
+two:
+  orange_book_code: MyString
+  orange_book_desc: MyString

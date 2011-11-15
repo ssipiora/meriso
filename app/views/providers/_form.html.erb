@@ -1,0 +1,85 @@
+<%= form_for(@provider) do |f| %>
+  <% if @provider.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@provider.errors.count, "error") %> prohibited this provider from being saved:</h2>
+
+      <ul>
+      <% @provider.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :npi %><br />
+    <%= f.number_field :npi %>
+  </div>
+  <div class="field">
+    <%= f.label :business_name %><br />
+    <%= f.text_field :business_name %>
+  </div>
+  <div class="field">
+    <%= f.label :address1 %><br />
+    <%= f.text_field :address1 %>
+  </div>
+  <div class="field">
+    <%= f.label :address2 %><br />
+    <%= f.text_field :address2 %>
+  </div>
+  <div class="field">
+    <%= f.label :city %><br />
+    <%= f.text_field :city %>
+  </div>
+  <div class="field">
+    <%= f.label :state %><br />
+    <%= f.text_field :state %>
+  </div>
+  <div class="field">
+    <%= f.label :zip %><br />
+    <%= f.text_field :zip %>
+  </div>
+  <div class="field">
+    <%= f.label :phone1 %><br />
+    <%= f.text_field :phone1 %>
+  </div>
+  <div class="field">
+    <%= f.label :fax %><br />
+    <%= f.text_field :fax %>
+  </div>
+  <div class="field">
+    <%= f.label :contact %><br />
+    <%= f.text_field :contact %>
+  </div>
+  <div class="field">
+    <%= f.label :first %><br />
+    <%= f.text_field :first %>
+  </div>
+  <div class="field">
+    <%= f.label :last %><br />
+    <%= f.text_field :last %>
+  </div>
+  <div class="field">
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :specialty %><br />
+    <%= f.text_field :specialty %>
+  </div>
+  <div class="field">
+    <%= f.label :sales %><br />
+    <%= f.number_field :sales %>
+  </div>
+  <div class="field">
+    <%= f.label :license_state %><br />
+    <%= f.text_field :license_state %>
+  </div>
+  <div class="field">
+    <%= f.label :license %><br />
+    <%= f.text_field :license %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  thera_class_code: MyString
+  thera_class_desc: MyString
+
+two:
+  thera_class_code: MyString
+  thera_class_desc: MyString

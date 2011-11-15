@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  card_number: MyString
+  exp_date: 2011-10-30
+  cvv: MyString
+  issuer: MyString
+  lot_id: 1
+  location_id: 1
+  location_type: MyString
+  product_id: 1
+  activated_date: 2011-10-30
+  issuer_id: 1
+
+two:
+  card_number: MyString
+  exp_date: 2011-10-30
+  cvv: MyString
+  issuer: MyString
+  lot_id: 1
+  location_id: 1
+  location_type: MyString
+  product_id: 1
+  activated_date: 2011-10-30
+  issuer_id: 1

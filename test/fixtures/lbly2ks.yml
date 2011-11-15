@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  mfg_code: 1
+  labeler_code: MyString
+  rebate_status: 1
+  rebate_effective_date: 2011-10-30
+  rebate_termination_date: 2011-10-30
+
+two:
+  mfg_code: 1
+  labeler_code: MyString
+  rebate_status: 1
+  rebate_effective_date: 2011-10-30
+  rebate_termination_date: 2011-10-30

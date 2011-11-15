@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Territory name:</b>
+  <%= @territory.territory_name %>
+</p>
+
+<p>
+  <b>Zipcode:</b>
+  <%= @territory.zipcode %>
+</p>
+
+<p>
+  <b>Zip label:</b>
+  <%= @territory.zip_label %>
+</p>
+
+<p>
+  <b>District:</b>
+  <%= @territory.district_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_territory_path(@territory) %> |
+<%= link_to 'Back', territories_path %>

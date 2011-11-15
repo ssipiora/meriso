@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  strength_code: 1
+  strength_name: MyString
+  StrengthNameLong: MyString
+
+two:
+  strength_code: 1
+  strength_name: MyString
+  StrengthNameLong: MyString

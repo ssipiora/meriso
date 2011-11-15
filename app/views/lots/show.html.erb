@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Location:</b>
+  <%= @lot.location_id %>
+</p>
+
+<p>
+  <b>Location type:</b>
+  <%= @lot.location_type %>
+</p>
+
+<p>
+  <b>Lot Number:</b>
+  <%= @lot.lot_number %>
+</p>
+
+<p>
+  <b>Quantity:</b>
+  <%= @lot.quantity %>
+</p>
+
+
+<%= link_to 'Edit', edit_lot_path(@lot) %> |
+<%= link_to 'Back', lots_path %>

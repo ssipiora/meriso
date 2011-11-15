@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  form_code: MyString
+  master_form_code: MyString
+  form_desc: MyString
+
+two:
+  form_code: MyString
+  master_form_code: MyString
+  form_desc: MyString

@@ -1,0 +1,59 @@
+<h1>Listing providers</h1>
+
+<table>
+  <tr>
+    <th>Npi</th>
+    <th>Business name</th>
+    <th>Address1</th>
+    <th>Address2</th>
+    <th>City</th>
+    <th>State</th>
+    <th>Zip</th>
+    <th>Phone1</th>
+    <th>Fax</th>
+    <th>Contact</th>
+    <th>First</th>
+    <th>Last</th>
+    <th>Title</th>
+    <th>Specialty</th>
+    <th>Sales</th>
+    <th>License State</th>
+    <th>License</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @providers.each do |provider| %>
+  <tr>
+    <td><%= provider.npi %></td>
+    <td><%= provider.business_name %></td>
+    <td><%= provider.address1 %></td>
+    <td><%= provider.address2 %></td>
+    <td><%= provider.city %></td>
+    <td><%= provider.state %></td>
+    <td><%= provider.zip %></td>
+    <td><%= provider.phone1 %></td>
+    <td><%= provider.fax %></td>
+    <td><%= provider.contact %></td>
+    <td><%= provider.first %></td>
+    <td><%= provider.last %></td>
+    <td><%= provider.title %></td>
+    <td><%= provider.specialty %></td>
+    <td><%= provider.sales %></td>
+    <td><%= provider.license_state %></td>
+    <td><%= provider.license %></td>
+    <td><%= link_to 'Show', provider %></td>
+    <td><%= link_to 'Edit', edit_provider_path(provider) %></td>
+    <td><%= link_to 'Destroy', provider, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Provider', new_provider_path %>
+
+<br />
+<%= will_paginate @providers %>
+<br />

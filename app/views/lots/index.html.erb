@@ -1,0 +1,29 @@
+<h1>Listing lots</h1>
+
+<table>
+  <tr>
+    <th>Location</th>
+    <th>Location type</th>
+    <th>Lot Number</th>
+    <th>Quantity</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @lots.each do |lot| %>
+  <tr>
+    <td><%= lot.location_id %></td>
+    <td><%= lot.location_type %></td>
+    <td><%= lot.lot_number %></td>
+    <td><%= lot.quantity %></td>
+    <td><%= link_to 'Show', lot %></td>
+    <td><%= link_to 'Edit', edit_lot_path(lot) %></td>
+    <td><%= link_to 'Destroy', lot, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Lot', new_lot_path %>
